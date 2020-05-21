@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const logger = require('morgan');
 const path = require('path');
+global.__basedir = __dirname;
 
 // ************ express() - (don't touch) ************
 const app = express();
