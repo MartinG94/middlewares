@@ -13,6 +13,9 @@ const controller = {
 		let html = readHTML('index');
 		res.send(html);
 	},
+	saludarAdmin: (req, res) => {
+		return res.send(req.nombreAdmin);
+	},
 };
 
 module.exports = controller
